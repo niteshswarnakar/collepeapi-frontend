@@ -1,13 +1,14 @@
 .headerdiv {
   display: absolute;
   top: 0;
+  padding: 8px 0;
   position: sticky;
   z-index: 2;
   font-size: 1.5rem;
   width: 100%;
-  color: #eee;
-  background-color: #02b0ac;
-  border-bottom: 1px solid white;
+  color: #000;
+  background-color: #fff;
+  border-bottom: 1px solid grey;
 }
 .header {
   margin: auto;
@@ -19,7 +20,12 @@
 }
 
 .right {
-  width: 40%;
+  width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.mylogo {
+  width: 40px;
+  height: auto;
 }
