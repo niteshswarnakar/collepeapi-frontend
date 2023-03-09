@@ -29,6 +29,32 @@ const Home = () => {
     }
   };
 
+  const messages = [
+    "Find whose photo appears in your profile card 💘",
+    "Find your photo in another friend's profile card 👫👫",
+    "Are you enjoying this app 🎅",
+    "You can share this website link for fun 💘",
+    "Share this website to your friends 💘",
+    "Browse in laptop for better experience ",
+    "You can also search Archi's Glamours 👸👸",
+    "People say BCTians are wierd, is it? 👺👺",
+    "Don't forget to check Chemical people",
+    "Civil engineering has greater scope in Nepal 👷 , is it?",
+    "Mechanical guys are awesome 👲👲",
+    "Did you find your profile picture here? 😍",
+    "Search your crush from every department 😀",
+    "Trying to find program code for chemical, it is BCH",
+    "Trying to find program code for Architecture, I also don't know 😀 ",
+    "Who writes in confession pages when you can directly find here email of your crush ",
+    "Still not found what you're searching 🙁🙁 , seriously ?",
+    "Don't forget to tap on the youtube icon 😀😀",
+    "Why are you still searching here 🐼🐼",
+    "Grab the email 💕 and spam your friend ",
+    "Are you fresher or ... ",
+  ];
+  const min = 0;
+  const max = 18;
+  const randMessageIndex = Math.floor(Math.random() * (max - min + 1)) + min;
   return (
     <Stack className={classes.App}>
       <Grid xs={12} container direction="column">
@@ -64,7 +90,16 @@ const Home = () => {
           </form>
         )}
       </Grid>
-      {photoAlert && <p>Photos have been randomly assigned 👻💘 </p>}
+      {photoAlert && (
+        <Grid item>
+          <p>Photos have been randomly assigned 😀 </p>
+        </Grid>
+      )}
+      {photoAlert && (
+        <Grid item>
+          <p>{messages[randMessageIndex]}</p>
+        </Grid>
+      )}
       <Grid className={classes.carContainer} container xs={12} spacing={4}>
         {students.map((student, index) => {
           return <Cardpage key={index} student={student} />;
