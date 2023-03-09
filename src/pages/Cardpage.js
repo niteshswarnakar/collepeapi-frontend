@@ -20,10 +20,10 @@ const Home = ({ student }) => {
           />
           <CardContent>
             <Typography gutterBottom variant="h7" component="div">
-              {student[3]}
+              {`${student[3]}`}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {student[0]} - {student[1]}
+              {`${student[0]}${student[1]}${student[2]}`}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Pulchowk Campus

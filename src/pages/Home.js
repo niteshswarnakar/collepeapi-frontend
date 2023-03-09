@@ -32,12 +32,13 @@ const Home = () => {
       <Grid xs={12} container direction="column">
         {!flag && (
           <form className={classes.myform} onSubmit={submitHandler}>
+            <p>Generate your cross-department's friends detail</p>
             <TextField
               name="prog"
               type="text"
               label="Program"
               inputRef={prog}
-              placeholder="BCT"
+              placeholder="eg. BCH"
             />
             <TextField
               type="text"
@@ -45,7 +46,7 @@ const Home = () => {
               label="Batch"
               id="batch"
               inputRef={batch}
-              placeholder="075"
+              placeholder="eg. 076"
             />
             <TextField
               label="Group"
@@ -53,7 +54,7 @@ const Home = () => {
               name="group"
               id="group"
               inputRef={group}
-              placeholder="C"
+              placeholder="eg. A"
             />
             <Button variant="contained" type="submit" onClick={submitHandler}>
               Fetch Data

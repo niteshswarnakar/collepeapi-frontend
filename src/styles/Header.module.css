@@ -7,10 +7,13 @@
   font-size: 1.5rem;
   width: 100%;
   color: #000;
-  background-color: #fff;
+  backdrop-filter: blur(10px);
+  /* backdrop-filter: opacity(20%); */
+  background-color: #ffffffa1;
   border-bottom: 1px solid grey;
 }
 .header {
+  font-size: 18px;
   margin: auto;
   max-height: 3rem;
   max-width: 80%;
