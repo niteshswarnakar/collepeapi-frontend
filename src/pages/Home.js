@@ -4,6 +4,7 @@ import Cardpage from "./Cardpage";
 import { Button, Grid, Stack, Box, TextField } from "@mui/material";
 import axios from "axios";
 const Home = () => {
+  const [photoAlert, setPhotoAlert] = useState(false);
   let flag = false;
   const [students, setStudents] = useState([]);
   let prog = useRef();
@@ -22,6 +23,7 @@ const Home = () => {
       let data = await response.data;
 
       setStudents(data);
+      setPhotoAlert(true);
     } catch (err) {
       console.log(err);
     }
@@ -32,7 +34,7 @@ const Home = () => {
       <Grid xs={12} container direction="column">
         {!flag && (
           <form className={classes.myform} onSubmit={submitHandler}>
-            <p>Generate your cross-department's friends detail</p>
+            <p>Generate your cross-department's friends detail 💘</p>
             <TextField
               name="prog"
               type="text"
@@ -62,6 +64,7 @@ const Home = () => {
           </form>
         )}
       </Grid>
+      {photoAlert && <p>Photos have been randomly assigned 👻💘 </p>}
       <Grid className={classes.carContainer} container xs={12} spacing={4}>
         {students.map((student, index) => {
           return <Cardpage key={index} student={student} />;
