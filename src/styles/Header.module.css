@@ -12,8 +12,9 @@
 }
 .header {
   margin: auto;
-  height: 2.5rem;
+  max-height: 3rem;
   max-width: 80%;
+  min-width: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,10 +23,18 @@
 .right {
   width: 30%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
 }
 
 .mylogo {
   width: 40px;
   height: auto;
+}
+
+.topHome {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
