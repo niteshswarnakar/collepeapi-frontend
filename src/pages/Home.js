@@ -37,6 +37,7 @@ const Home = () => {
               type="text"
               label="Program"
               inputRef={prog}
+              placeholder="BCT"
             />
             <TextField
               type="text"
@@ -44,6 +45,7 @@ const Home = () => {
               label="Batch"
               id="batch"
               inputRef={batch}
+              placeholder="075"
             />
             <TextField
               label="Group"
@@ -51,6 +53,7 @@ const Home = () => {
               name="group"
               id="group"
               inputRef={group}
+              placeholder="C"
             />
             <Button variant="contained" type="submit" onClick={submitHandler}>
               Fetch Data
