@@ -11,10 +11,10 @@ const Header = () => {
         </div>
         <div className={classes.right}>
           <Link style={{ textDecoration: "none", color: "#000" }} to="/">
-            Home
+            @neptechbyte
           </Link>
           <Link style={{ textDecoration: "none", color: "#000" }} to="/">
-            Dashboard
+            .
           </Link>
         </div>
       </div>
