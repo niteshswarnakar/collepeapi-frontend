@@ -28,44 +28,42 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <Stack className={classes.App}>
-        <Stack direction="column">
-          {!flag && (
-            <form className={classes.myform} onSubmit={submitHandler}>
-              <TextField
-                name="prog"
-                type="text"
-                label="Program"
-                inputRef={prog}
-              />
-              <TextField
-                type="text"
-                name="batch"
-                label="Batch"
-                id="batch"
-                inputRef={batch}
-              />
-              <TextField
-                label="Group"
-                type="text"
-                name="group"
-                id="group"
-                inputRef={group}
-              />
-              <Button variant="contained" type="submit" onClick={submitHandler}>
-                Fetch Data
-              </Button>
-            </form>
-          )}
-        </Stack>
-        <Grid container sx={3} spacing={2}>
-          {students.map((student, index) => {
-            return <Cardpage key={index} student={student} />;
-          })}
-        </Grid>
-      </Stack>
-    </div>
+    <Stack className={classes.App}>
+      <Grid xs={12} container direction="column">
+        {!flag && (
+          <form className={classes.myform} onSubmit={submitHandler}>
+            <TextField
+              name="prog"
+              type="text"
+              label="Program"
+              inputRef={prog}
+            />
+            <TextField
+              type="text"
+              name="batch"
+              label="Batch"
+              id="batch"
+              inputRef={batch}
+            />
+            <TextField
+              label="Group"
+              type="text"
+              name="group"
+              id="group"
+              inputRef={group}
+            />
+            <Button variant="contained" type="submit" onClick={submitHandler}>
+              Fetch Data
+            </Button>
+          </form>
+        )}
+      </Grid>
+      <Grid className={classes.carContainer} container xs={12} spacing={4}>
+        {students.map((student, index) => {
+          return <Cardpage key={index} student={student} />;
+        })}
+      </Grid>
+    </Stack>
   );
 };
 

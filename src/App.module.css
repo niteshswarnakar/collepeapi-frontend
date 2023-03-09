@@ -13,6 +13,8 @@
 
 .App {
   text-align: center;
+  width: 100%;
+  margin-left: 24px;
 }
 
 .App-logo {
@@ -38,7 +40,7 @@
 }
 
 .myform {
-  width: 20%;
+  width: 80%;
   height: 45vh;
   display: flex;
   flex-direction: column;
@@ -48,7 +50,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 1rem 2rem;
-  border: 1px solid rgb(48, 60, 192);
+  border: 1px solid rgba(48, 60, 192, 0.178);
   align-self: center;
   /* background-color: red; */
 }
