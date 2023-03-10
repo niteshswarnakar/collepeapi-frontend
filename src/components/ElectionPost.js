@@ -1,5 +1,5 @@
 import React from "react";
-import electionFlex from "../assets/election.png";
+import electionFlex from "../assets/architecture.jpg";
 import classes from "../App.module.css";
 const ElectionPost = () => {
   return (
