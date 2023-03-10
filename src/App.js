@@ -12,6 +12,7 @@ function App() {
       <Header />
       <div className={classes.ErrorMessage}>
         <p>Kei samaye lai banda gariyeko xa 👺...</p>
+        <a href="https://www.programiz.com/">https://www.programiz.com/</a>
       </div>
       {/* <ElectionPost /> */}
       {/* <Routes>
