@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Header />
       <div className={classes.ErrorMessage}>
-        <h1>Kei samaye lai banda gariyeko xa 👺...</h1>
+        <p>Kei samaye lai banda gariyeko xa 👺...</p>
       </div>
       {/* <ElectionPost /> */}
       {/* <Routes>

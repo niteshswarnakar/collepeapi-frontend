@@ -19,6 +19,7 @@
 }
 
 .ErrorMessage {
+  font-size: 18px;
   display: flex;
   height: 90vh;
   justify-content: center;
