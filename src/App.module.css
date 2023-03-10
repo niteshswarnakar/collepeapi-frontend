@@ -61,6 +61,17 @@
   /* background-color: red; */
 }
 
+.electionContainer {
+  margin: 1.6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.electionFlex {
+  max-height: 10vh;
+  width: auto;
+}
+
 .App-link {
   color: #61dafb;
 }
