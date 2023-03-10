@@ -60,7 +60,9 @@ const Home = () => {
       <Grid xs={12} container direction="column">
         {!flag && (
           <form className={classes.myform} onSubmit={submitHandler}>
-            <p>Generate your cross-department's friends detail 💘</p>
+            <h3>
+              Today's most searched department - Architecture 076,077 and 078 😀
+            </h3>
             <TextField
               name="prog"
               type="text"
