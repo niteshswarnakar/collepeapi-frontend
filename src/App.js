@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className={classes.ErrorMessage}>
+      {/* <div className={classes.ErrorMessage}>
         <p>Kei samaye lai banda gariyeko xa 👺...</p>
         <a href="https://www.programiz.com/">www.programiz.com</a>
         <a href="https://www.youtube.com/@easyexplanation9220">
@@ -19,12 +19,12 @@ function App() {
         <a href="https://www.youtube.com/watch?v=D0l_4vXCY_o">
           www.youtube.com/075BCT-PICNIC
         </a>
-      </div>
-      {/* <ElectionPost /> */}
-      {/* <Routes>
+      </div> */}
+      <ElectionPost />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes> */}
+      </Routes>
     </Router>
   );
 }

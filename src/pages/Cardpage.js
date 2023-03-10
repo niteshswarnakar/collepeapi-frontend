@@ -1126,7 +1126,7 @@ let images = [
 ];
 
 const Home = ({ student }) => {
-  const min = 1;
+  const min = 16;
   const max = 1100;
   const randImageIndex = Math.floor(Math.random() * (max - min + 1)) + min;
   return (
