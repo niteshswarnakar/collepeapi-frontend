@@ -15,17 +15,18 @@ const Header = () => {
           </a>
         </div>
         <div className={classes.right}>
-          <a
+          {/* <a
             className={classes.youtubeIcon}
             style={{ textDecoration: "none", color: "#000" }}
             to="https://www.youtube.com/@neptechbyte/videos">
             <SocialIcon url="https://www.youtube.com/@neptechbyte/videos" />
-          </a>
-          <a
+          </a> */}
+          What's up?
+          {/* <a
             style={{ textDecoration: "none", color: "#000" }}
             href="https://www.youtube.com/@neptechbyte/videos">
             neptech
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
