@@ -11,8 +11,8 @@ const Home = () => {
   let batch = useRef();
   let group = useRef();
   let message = useRef();
-  // let url = "https://collegeapi-backend.vercel.app/api/students";
-  let url = "http://localhost:5000/api/students";
+  let url = "https://collegeapi-backend.vercel.app/api/students";
+  // let url = "http://localhost:5000/api/students";
   let requestOption = new URLSearchParams();
   const submitHandler = async (e) => {
     e.preventDefault();
