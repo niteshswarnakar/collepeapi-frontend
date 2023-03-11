@@ -1125,6 +1125,9 @@ let images = [
   "335259518_859633515130029_7263352325454479304_n.jpg",
 ];
 
+const imgurl =
+  "https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+
 const Home = ({ student }) => {
   const min = 16;
   const max = 1100;
@@ -1136,7 +1139,8 @@ const Home = ({ student }) => {
           <CardMedia
             component="img"
             height="140"
-            image={require(`../assets/profiles/${images[randImageIndex]}`)}
+            // image={require(`../assets/profiles/${images[randImageIndex]}`)}
+            image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="green iguana"
           />
           <CardContent>
@@ -1144,13 +1148,13 @@ const Home = ({ student }) => {
               {`${student[3]}`}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {`${student[0]}${student[1]}${student[2]}`}
+              {/* {`${student[0]}${student[1]}${student[2]}`} */}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Pulchowk Campus
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {student[4]}
+              {/* {student[4]} */}
             </Typography>
           </CardContent>
         </CardActionArea>

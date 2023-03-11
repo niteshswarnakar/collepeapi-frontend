@@ -92,7 +92,10 @@ const Home = () => {
       </Grid>
       {photoAlert && (
         <Grid item>
-          <p>Photos have been randomly assigned 😀 </p>
+          <h4>
+            Due to some students concern about their email and photo, I removed
+            those fields
+          </h4>
         </Grid>
       )}
       {photoAlert && (
