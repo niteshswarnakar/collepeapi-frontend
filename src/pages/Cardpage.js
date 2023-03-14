@@ -1148,8 +1148,8 @@ const Home = ({ student }) => {
               {`${student[3]}`}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {/* {`${student[0]}${student[1]}${student[2]}`} */}
-              {`${student[0]}${student[1]}`}
+              {`${student[0]}${student[1]}${student[2]}`}
+              {/* {`${student[0]}${student[1]}`} */}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Pulchowk Campus

@@ -5,7 +5,8 @@ const ElectionPost = () => {
   return (
     <div className={classes.electionContainer}>
       <marquee>
-        <img className={classes.electionFlex} src={electionFlex}></img>;
+        {/* <img className={classes.electionFlex} src={electionFlex}></img>; */}
+        <h2>Exam Auna layo , Padhera basa </h2>
       </marquee>
     </div>
   );

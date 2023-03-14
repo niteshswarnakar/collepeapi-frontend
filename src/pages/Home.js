@@ -101,14 +101,14 @@ const Home = () => {
           </form>
         )}
       </Grid>
-      {photoAlert && (
+      {/* {photoAlert && (
         <Grid item>
           <h4>
             Due to some students concern about their email and photo, I removed
             those fields
           </h4>
         </Grid>
-      )}
+      )} */}
       {photoAlert && (
         <Grid item>
           <p>{messages[randMessageIndex]}</p>
