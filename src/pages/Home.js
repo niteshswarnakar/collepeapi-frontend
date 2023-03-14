@@ -88,7 +88,7 @@ const Home = () => {
               placeholder="eg. A"
             />
             <TextField
-              label="Your message to the developer"
+              label="Your message"
               type="text"
               name="message"
               id="message"
