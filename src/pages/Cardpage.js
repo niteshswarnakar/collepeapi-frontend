@@ -8,6 +8,8 @@ import {
   CardActionArea,
 } from "@mui/material";
 
+import Sukriti from "../assets/sukriti.jpg";
+
 let images = [
   "216145542_196680639130063_1002614990489014965_n.jpg",
   "305601050_154397137231303_7090186328813633198_n.jpg",
@@ -1140,7 +1142,8 @@ const Home = ({ student }) => {
             component="img"
             height="140"
             // image={require(`../assets/profiles/${images[randImageIndex]}`)}
-            image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            // image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            image={Sukriti}
             alt="green iguana"
           />
           <CardContent>
