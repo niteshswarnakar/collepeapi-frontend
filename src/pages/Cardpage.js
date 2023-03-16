@@ -1142,8 +1142,8 @@ const Home = ({ student }) => {
             component="img"
             height="140"
             // image={require(`../assets/profiles/${images[randImageIndex]}`)}
-            // image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            image={Sukriti}
+            image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            // image={Sukriti}
             alt="green iguana"
           />
           <CardContent>

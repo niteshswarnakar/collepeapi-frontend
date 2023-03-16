@@ -7,7 +7,6 @@ const ElectionPost = () => {
     <div className={classes.electionContainer}>
       <marquee>
         <img className={classes.electionFlex} src={pulchowkGirls}></img>;
-        {/* <h2>Choose your candidate responsibly</h2> */}
       </marquee>
     </div>
   );

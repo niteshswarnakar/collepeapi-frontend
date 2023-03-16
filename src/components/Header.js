@@ -21,7 +21,7 @@ const Header = () => {
             to="https://www.youtube.com/@neptechbyte/videos">
             <SocialIcon url="https://www.youtube.com/@neptechbyte/videos" />
           </a> */}
-          What's up?
+          Election Fever?
           {/* <a
             style={{ textDecoration: "none", color: "#000" }}
             href="https://www.youtube.com/@neptechbyte/videos">
