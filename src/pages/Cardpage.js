@@ -1155,13 +1155,12 @@ const Home = ({ student }) => {
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {`${student[0]}${student[1]}${student[2]}`}
-              {/* {`${student[0]}${student[1]}`} */}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Pulchowk Campus
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {/* {student[4]} */}
+              {student[4]}
             </Typography>
           </CardContent>
         </CardActionArea>
