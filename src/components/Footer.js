@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <div className={classes.footerDiv}>
       <p>For suggestions - </p>
-      <a href="https://www.facebook.com/nitesh.sunar/">@iamnitesh</a>
+      <a href="https://www.facebook.com/nitesh.sunar/" target="_blank">
+        @iamnitesh
+      </a>
       <SocialIcon url="https://www.facebook.com/nitesh.sunar/" />
     </div>
   );
