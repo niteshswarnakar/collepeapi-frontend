@@ -11,7 +11,6 @@ const AddConfessionPage = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log("submit button ran");
     const confessionData = {
       to: to.current.value,
       from: from.current.value,
@@ -24,7 +23,6 @@ const AddConfessionPage = () => {
         confessionData
       );
 
-      console.log({ data });
       navigate("/confession");
     } catch (err) {
       console.log(err);
