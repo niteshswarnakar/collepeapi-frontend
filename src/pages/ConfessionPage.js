@@ -14,7 +14,7 @@ const ConfessionPage = () => {
     );
     console.log({ data });
     if (data) {
-      setAllConfession(data);
+      setAllConfession(data.reverse());
     }
   };
 

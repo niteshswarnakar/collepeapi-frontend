@@ -1,4 +1,6 @@
 .confessionFormDiv {
+  margin: 0 1rem;
+  border-radius: 20px;
   background-image: linear-gradient(
     45deg,
     hsl(228deg 100% 50%) 0%,
@@ -12,16 +14,56 @@
     hsl(276deg 80% 51%) 89%,
     hsl(279deg 78% 50%) 100%
   );
-  height: 80vh;
+  height: 75vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  max-width: 1000px;
+  max-width: 900px;
 }
 
-.confessionFormDiv p {
-  font-size: 1.6rem;
+.confessionFormDiv form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10rem;
+  gap: 1.6rem;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.inputDiv p {
   color: white;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.inputDiv input {
+  height: 2.6rem;
+  padding: 0 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.SubmitButton {
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 4px grey;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 63, 186, 1) 0%,
+    rgba(158, 0, 255, 1) 100%
+  );
 }

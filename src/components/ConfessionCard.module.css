@@ -21,3 +21,11 @@
   font-weight: 300;
   padding-bottom: 0.4rem;
 }
+
+.toField {
+  margin-left: 2rem;
+}
+
+.date {
+  font-size: 14px;
+}
