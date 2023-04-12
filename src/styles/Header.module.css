@@ -41,3 +41,20 @@
   align-items: center;
   gap: 4px;
 }
+
+.confessionNav {
+  font-size: 18px;
+  height: 2.4rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 63, 186, 1) 0%,
+    rgba(158, 0, 255, 1) 100%
+  );
+  color: white;
+  border-radius: 1.6rem;
+  border: none;
+}

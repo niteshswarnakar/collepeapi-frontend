@@ -8,6 +8,7 @@ const ConfessionCard = ({ confession }) => {
         <p>From: {confession.to}</p>
       </div>
       <p className={classes.message}>{confession.message}</p>
+      <p>{confession.date}</p>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import ElectionPost from "./components/ElectionPost";
 import classes from "./App.module.css";
 import Footer from "./components/Footer";
 import ConfessionPage from "./pages/ConfessionPage";
+import AddConfessionPage from "./pages/AddConfessionPage";
 function App() {
   return (
     <Router>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/confession" element={<ConfessionPage />} />
+        <Route path="/add-confession" element={<AddConfessionPage />} />
       </Routes>
       <Footer />
     </Router>

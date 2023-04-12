@@ -1,0 +1,27 @@
+.confessionFormDiv {
+  background-image: linear-gradient(
+    45deg,
+    hsl(228deg 100% 50%) 0%,
+    hsl(242deg 97% 59%) 11%,
+    hsl(250deg 94% 58%) 22%,
+    hsl(255deg 92% 57%) 33%,
+    hsl(260deg 89% 56%) 44%,
+    hsl(265deg 87% 55%) 56%,
+    hsl(269deg 84% 53%) 67%,
+    hsl(272deg 82% 52%) 78%,
+    hsl(276deg 80% 51%) 89%,
+    hsl(279deg 78% 50%) 100%
+  );
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1000px;
+}
+
+.confessionFormDiv p {
+  font-size: 1.6rem;
+  color: white;
+}

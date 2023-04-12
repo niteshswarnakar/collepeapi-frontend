@@ -21,7 +21,9 @@ const Header = () => {
             to="https://www.youtube.com/@neptechbyte/videos">
             <SocialIcon url="https://www.youtube.com/@neptechbyte/videos" />
           </a> */}
-          <Link to="/confession"> Students Confession</Link>
+          <Link className={classes.confessionNav} to="/confession">
+            Confession
+          </Link>
           {/* <a
             style={{ textDecoration: "none", color: "#000" }}
             href="https://www.youtube.com/@neptechbyte/videos">
