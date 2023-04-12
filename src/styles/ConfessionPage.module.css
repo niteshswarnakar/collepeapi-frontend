@@ -28,4 +28,13 @@
   color: white;
   border-radius: 1.6rem;
   border: none;
+  cursor: pointer;
+
+  transition: 1s all;
+}
+
+.createButton :hover {
+  background: linear-gradient(90deg, rgb(0, 72, 217) 0%, rgb(136, 0, 221) 100%);
+  box-shadow: 0 0 5px rgba(134, 134, 134, 0.528);
+  /* transition-delay: 0.5s; */
 }
