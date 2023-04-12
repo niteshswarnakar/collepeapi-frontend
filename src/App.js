@@ -7,6 +7,7 @@ import Button from "./components/Button";
 import ElectionPost from "./components/ElectionPost";
 import classes from "./App.module.css";
 import Footer from "./components/Footer";
+import ConfessionPage from "./pages/ConfessionPage";
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/confession" element={<ConfessionPage />} />
       </Routes>
       <Footer />
     </Router>

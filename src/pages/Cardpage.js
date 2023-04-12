@@ -1132,7 +1132,7 @@ const imgurl =
 
 const Home = ({ student }) => {
   const min = 16;
-  const max = 1100;
+  const max = 1000;
   const randImageIndex = Math.floor(Math.random() * (max - min + 1)) + min;
   return (
     <Grid item xs={6} md={3} my={2}>
@@ -1147,7 +1147,8 @@ const Home = ({ student }) => {
             // image="https://images.pexels.com/photos/15957697/pexels-photo-15957697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             // alt="green iguana"
             // image="https://random.imagecdn.app/500/150"
-            image={college}
+            // image={college}
+            image={require(`../assets/profiles/${images[randImageIndex]}`)}
           />
           <CardContent>
             <Typography gutterBottom variant="h7" component="div">

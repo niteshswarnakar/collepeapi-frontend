@@ -9,10 +9,10 @@ const Header = () => {
     <div className={classes.headerdiv}>
       <div className={classes.header}>
         <div className={classes.left}>
-          <a href="/" className={classes.topHome}>
+          <Link to="/" className={classes.topHome}>
             <img className={classes.mylogo} src={mylogo} />
             <span>Home</span>
-          </a>
+          </Link>
         </div>
         <div className={classes.right}>
           {/* <a
@@ -21,7 +21,7 @@ const Header = () => {
             to="https://www.youtube.com/@neptechbyte/videos">
             <SocialIcon url="https://www.youtube.com/@neptechbyte/videos" />
           </a> */}
-          Election Fever?
+          <Link to="/confession"> Students Confession</Link>
           {/* <a
             style={{ textDecoration: "none", color: "#000" }}
             href="https://www.youtube.com/@neptechbyte/videos">
