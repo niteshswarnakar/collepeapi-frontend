@@ -5,15 +5,20 @@
   padding: 1rem 1.6rem;
   max-width: 900px;
   border-radius: 2rem;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(246, 246, 246);
   border: 1px solid rgba(2, 63, 186, 1);
   margin-top: 2rem;
+}
+
+.cardBox div:hover {
+  padding: 1rem 2rem;
 }
 
 .cardBox div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.6rem;
+  transition: 0.4s all;
 }
 
 .message {
