@@ -30,32 +30,36 @@ const AddConfessionPage = () => {
   };
 
   return (
-    <section className={classes.confessionFormDiv}>
-      <form onSubmit={submitHandler}>
-        <div className={classes.inputDiv}>
-          <p id="to">To</p>
-          <input
-            placeholder="eg. David Walker, BCT, 075"
-            type="text"
-            ref={to}
-          />
-        </div>
-        <div className={classes.inputDiv}>
-          <p id="from">From</p>
-          <input
-            placeholder="eg. David Walker, BCT, 075"
-            type="text"
-            ref={from}
-          />
-        </div>
-        <div className={classes.inputDiv}>
-          <p id="message">Confession</p>
-          <input placeholder="message" type="text" ref={message}></input>
-        </div>
-        <button className={classes.SubmitButton} type="submit">
-          Submit
-        </button>
-      </form>
+    <section className={classes.section__confession}>
+      <div className={classes.confession__div}>
+        <form onSubmit={submitHandler}>
+          <h1 className={classes.heading}>Your Confession </h1>
+          <p className={classes.anonymous}>You are completely anonymous</p>
+          <div className={classes.inputDiv}>
+            <p id="to">To</p>
+            <input
+              placeholder="eg. David Walker, BCT, 075"
+              type="text"
+              ref={to}
+            />
+          </div>
+          <div className={classes.inputDiv}>
+            <p id="from">From</p>
+            <input
+              placeholder="eg. David Walker, BCT, 075"
+              type="text"
+              ref={from}
+            />
+          </div>
+          <div className={classes.inputDiv}>
+            <p id="message">Confession</p>
+            <input placeholder="message" type="text" ref={message}></input>
+          </div>
+          <button className={classes.SubmitButton} type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
   );
 };
