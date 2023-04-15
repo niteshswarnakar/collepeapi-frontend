@@ -9,6 +9,7 @@ import classes from "./App.module.css";
 import Footer from "./components/Footer";
 import ConfessionPage from "./pages/ConfessionPage";
 import AddConfessionPage from "./pages/AddConfessionPage";
+import ApiPage from "./pages/ApiPage";
 function App() {
   return (
     <Router>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/confession" element={<ConfessionPage />} />
         <Route path="/add-confession" element={<AddConfessionPage />} />
+        <Route path="/api-endpoints" element={<ApiPage />} />
       </Routes>
       <Footer />
     </Router>

@@ -21,7 +21,7 @@ const Header = () => {
             to="https://www.youtube.com/@neptechbyte/videos">
             <SocialIcon url="https://www.youtube.com/@neptechbyte/videos" />
           </a> */}
-          <Link className={classes.api_nav} to="/confession">
+          <Link className={classes.api_nav} to="/api-endpoints">
             Api
           </Link>
           <Link className={classes.confessionNav} to="/confession">

@@ -1,0 +1,41 @@
+.section_api {
+  width: 100%;
+  height: 100vh;
+}
+
+.api_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  color: rgb(27, 27, 27);
+  height: 70vh;
+  gap: 2rem;
+  max-width: 1300px;
+  /* background-color: red; */
+}
+
+.api_main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.heading {
+  margin-top: 2rem;
+  border-bottom: 1px solid blue;
+  font-size: 2rem;
+}
+
+.request_method {
+  font-size: 18px;
+  padding: 0 0.4rem;
+}
+
+.api_url {
+  border: 2px solid blue;
+  font-size: 18px;
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.4rem;
+}
