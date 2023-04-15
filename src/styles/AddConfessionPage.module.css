@@ -121,4 +121,10 @@
   );
   border-radius: 30px;
   color: white;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.submitbutton:hover {
+  background-color: black;
 }

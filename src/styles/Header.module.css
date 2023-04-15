@@ -15,19 +15,19 @@
 .header {
   font-size: 18px;
   margin: auto;
-  max-height: 3rem;
-  max-width: 80%;
-  min-width: 10%;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  max-width: 1300px;
+  max-height: 3rem;
 }
 
 .right {
-  width: 30%;
+  width: 60%;
+  justify-content: flex-end;
   display: flex;
-  align-items: center;
-  gap: 2px;
+  gap: 1rem;
 }
 
 .mylogo {
@@ -57,4 +57,10 @@
   color: white;
   border-radius: 1.6rem;
   border: none;
+}
+
+.api_nav {
+  border: 2px solid blue;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
 }

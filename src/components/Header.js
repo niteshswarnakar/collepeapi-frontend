@@ -11,7 +11,7 @@ const Header = () => {
         <div className={classes.left}>
           <Link to="/" className={classes.topHome}>
             <img className={classes.mylogo} src={mylogo} />
-            <span>Home</span>
+            {/* <span>Home</span> */}
           </Link>
         </div>
         <div className={classes.right}>
@@ -21,6 +21,9 @@ const Header = () => {
             to="https://www.youtube.com/@neptechbyte/videos">
             <SocialIcon url="https://www.youtube.com/@neptechbyte/videos" />
           </a> */}
+          <Link className={classes.api_nav} to="/confession">
+            Api
+          </Link>
           <Link className={classes.confessionNav} to="/confession">
             Confession
           </Link>
