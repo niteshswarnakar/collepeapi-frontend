@@ -1,9 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, CSSProperties, useRef } from "react";
 import classes from "../App.module.css";
 import Cardpage from "./Cardpage";
 import { Button, Grid, Stack, Box, TextField } from "@mui/material";
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
+
+const override = {
+  display: "block",
+  margin: "2rem auto",
+  borderColor: "red",
+};
+
 const Home = () => {
+  const [loading, setLoading] = useState(false);
   const [photoAlert, setPhotoAlert] = useState(false);
   let flag = false;
   const [students, setStudents] = useState([]);
@@ -16,6 +25,7 @@ const Home = () => {
   let requestOption = new URLSearchParams();
   const submitHandler = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     requestOption.append("prog", prog.current.value);
     requestOption.append("batch", batch.current.value);
@@ -58,6 +68,13 @@ const Home = () => {
   const min = 0;
   const max = 18;
   const randMessageIndex = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  useEffect(() => {
+    if (students.length !== 0) {
+      setLoading(false);
+    }
+  }, [students]);
+
   return (
     <Stack className={classes.App}>
       <Grid xs={12} container direction="column">
@@ -115,9 +132,21 @@ const Home = () => {
         </Grid>
       )}
       <Grid className={classes.carContainer} container xs={12} spacing={4}>
-        {students.map((student, index) => {
-          return <Cardpage key={index} student={student} />;
-        })}
+        {loading ? (
+          <ClipLoader
+            loading={loading}
+            size={50}
+            cssOverride={override}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        ) : (
+          <>
+            {students.map((student, index) => {
+              return <Cardpage key={index} student={student} />;
+            })}
+          </>
+        )}
       </Grid>
     </Stack>
   );

@@ -3,11 +3,11 @@ import ConfessionCard from "../components/ConfessionCard";
 import classes from "../styles/ConfessionPage.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import ClipLoader from "react-spinners/ClipLoader";
 const ConfessionPage = () => {
   const navigate = useNavigate();
   const [allConfession, setAllConfession] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   const getConfession = async () => {
     const { data } = await axios.get(
       "https://collegeapi-backend.vercel.app/api/get-confession"
@@ -20,7 +20,12 @@ const ConfessionPage = () => {
 
   useEffect(() => {
     getConfession();
-  }, []);
+    if (allConfession.length === 0) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
+  }, [allConfession]);
 
   // const confessionList = [
 
@@ -45,9 +50,20 @@ const ConfessionPage = () => {
         </button>
       </div>
       <div className={classes.container}>
-        {allConfession.map((confession, index) => {
-          return <ConfessionCard key={index} confession={confession} />;
-        })}
+        {loading ? (
+          <ClipLoader
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        ) : (
+          <>
+            {allConfession.map((confession, index) => {
+              return <ConfessionCard key={index} confession={confession} />;
+            })}
+          </>
+        )}
       </div>
     </section>
   );
