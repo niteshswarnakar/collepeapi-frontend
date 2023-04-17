@@ -20,12 +20,15 @@ const ConfessionPage = () => {
 
   useEffect(() => {
     getConfession();
+  }, []);
+
+  useEffect(() => {
     if (allConfession.length === 0) {
       setLoading(true);
     } else {
       setLoading(false);
     }
-  }, [allConfession]);
+  });
 
   // const confessionList = [
 
