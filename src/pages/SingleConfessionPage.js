@@ -1,3 +1,4 @@
+
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
@@ -34,6 +35,7 @@ const SingleConfessionPage = () => {
       console.log({ data });
       setNewConfession(data);
       setInputComment("");
+
     } catch (err) {
       console.log(err);
     }
@@ -78,6 +80,7 @@ const SingleConfessionPage = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
