@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./ConfessionCard.module.css";
-const ConfessionCard = ({ confession }) => {
+const ConfessionCard = ({ allConfession, confession }) => {
   return (
     <div className={classes.cardBox}>
       <div>

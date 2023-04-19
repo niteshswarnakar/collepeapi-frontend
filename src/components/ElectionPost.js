@@ -25,8 +25,8 @@ const ElectionPost = () => {
   return (
     <div className={classes.electionContainer}>
       <marquee>
-        {joke.map((item) => (
-          <p key={item}>{item}</p>
+        {joke.map((item, index) => (
+          <p key={index}>{item}</p>
         ))}
         {/* <img className={classes.electionFlex} src={pulchowkGirls}></img>; */}
       </marquee>

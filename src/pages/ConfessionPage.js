@@ -12,7 +12,6 @@ const ConfessionPage = () => {
     const { data } = await axios.get(
       "https://collegeapi-backend.vercel.app/api/get-confession"
     );
-    console.log({ data });
     if (data) {
       setAllConfession(data.reverse());
     }
@@ -29,21 +28,6 @@ const ConfessionPage = () => {
       setLoading(false);
     }
   });
-
-  // const confessionList = [
-
-  //   {
-  //     to: "BCT",
-  //     from: "BCE",
-  //     message:
-  //       "Hi, You are different than other. You personality is just  unique. Hi, You are different than other. You personality is just  unique . Hi, You are different than other. You personality is just  unique",
-  //   },
-  //   {
-  //     to: "BCT",
-  //     from: "BCE",
-  //     message: "These are the random test confession for the confession page",
-  //   },
-  // ];
 
   return (
     <section className={classes.confessionPage}>
@@ -63,7 +47,18 @@ const ConfessionPage = () => {
         ) : (
           <>
             {allConfession.map((confession, index) => {
-              return <ConfessionCard key={index} confession={confession} />;
+              return (
+                <button
+                  key={index}
+                  className={classes.button_card}
+                  onClick={() => {
+                    navigate(`/confession/${confession._id}`, {
+                      state: { allConfession },
+                    });
+                  }}>
+                  <ConfessionCard confession={confession} />
+                </button>
+              );
             })}
           </>
         )}

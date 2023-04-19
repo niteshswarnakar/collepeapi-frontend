@@ -1,7 +1,6 @@
 .confessionPage {
   max-width: 1400px;
   margin: 0 auto;
-  /* background-color: red; */
 }
 
 .container {
@@ -38,4 +37,9 @@
   height: 2.6rem;
   width: 12.4rem;
   /* transition-delay: 0.5s; */
+}
+
+.button_card {
+  border: none;
+  background-color: white;
 }

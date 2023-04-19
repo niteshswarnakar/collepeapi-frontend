@@ -1,0 +1,72 @@
+.section_confession {
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.confession_post {
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  min-height: 10vh;
+  border: 1px solid grey;
+}
+
+.topHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+  border: 1px solid blue;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.comment_form {
+  margin-top: 0.6rem;
+  margin-left: 0.6rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.comment_form input {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border: 1px solid blue;
+  border-radius: 30px;
+  min-width: 6rem;
+}
+
+.comment_form button {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border: 1px solid blue;
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.user_comment_div {
+  margin-left: 0.6rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comment_message {
+  border: 1px solid grey;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+}
