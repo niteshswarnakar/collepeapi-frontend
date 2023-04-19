@@ -41,5 +41,6 @@
 
 .button_card {
   border: none;
+  cursor: pointer;
   background-color: white;
 }
