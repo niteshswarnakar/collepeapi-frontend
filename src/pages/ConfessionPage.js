@@ -27,7 +27,7 @@ const ConfessionPage = () => {
     } else {
       setLoading(false);
     }
-  }, [allConfession]);
+  });
 
   return (
     <section className={classes.confessionPage}>
