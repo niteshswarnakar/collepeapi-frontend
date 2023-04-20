@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
@@ -35,7 +34,6 @@ const SingleConfessionPage = () => {
       console.log({ data });
       setNewConfession(data);
       setInputComment("");
-
     } catch (err) {
       console.log(err);
     }
@@ -49,11 +47,13 @@ const SingleConfessionPage = () => {
             <div className={classes.topHeader}>
               <GrApple style={{ width: "40px", height: "40px" }} />
               <p>{newConfession?.from}</p>
-              <p>-></p>
+              <span>&#8594;</span>
               <p>{confession?.to}</p>
             </div>
           </div>
           <p className={classes.message}>{newConfession?.message}</p>
+          <div className={classes.linebreak}></div>
+
           <form
             className={classes.comment_form}
             onSubmit={commentSubmitHandler}>
@@ -80,7 +80,6 @@ const SingleConfessionPage = () => {
         </div>
       </div>
     </section>
-
   );
 };
 
