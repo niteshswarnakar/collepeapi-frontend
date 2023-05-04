@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.confession_container {
+  display: flex;
+  flex-direction: column;
+}
+
 .createButton {
   width: 12rem;
   height: 2.4rem;

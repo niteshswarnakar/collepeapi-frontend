@@ -4,8 +4,7 @@
   flex-direction: column;
   padding: 1rem 1.6rem;
   max-width: 900px;
-  border-radius: 2rem;
-  /* background-color: rgb(246, 246, 246); */
+  border-radius: 1rem;
   border: 1px solid rgba(2, 63, 186, 1);
   margin-top: 2rem;
 }

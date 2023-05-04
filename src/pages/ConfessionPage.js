@@ -45,7 +45,7 @@ const ConfessionPage = () => {
             data-testid="loader"
           />
         ) : (
-          <>
+          <div className={classes.confession_container}>
             {allConfession.map((confession, index) => {
               return (
                 <button
@@ -60,7 +60,7 @@ const ConfessionPage = () => {
                 </button>
               );
             })}
-          </>
+          </div>
         )}
       </div>
     </section>
