@@ -1,18 +1,10 @@
 import React from "react";
-import classes from "../styles/Input.module.css";
-const Input = ({ label, type, name, myref }) => {
+import classes from "./Input.module.css";
+const Input = ({ placeholder, label, type, inputRef }) => {
   return (
-    <div className={classes.inputbox}>
-      <label className={classes.mylabel} htmlFor={name}>
-        {label}
-      </label>
-      <input
-        ref={myref}
-        className={classes.myinput}
-        id={name}
-        type={type}
-        name={name}
-      />
+    <div className={classes.inputDiv}>
+      <p id="from">{label}</p>
+      <input placeholder={placeholder} type={type} ref={inputRef} />
     </div>
   );
 };

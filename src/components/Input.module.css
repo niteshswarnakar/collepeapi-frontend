@@ -1,0 +1,16 @@
+.inputDiv {
+  padding: 0 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.inputDiv input {
+  padding: 0.6rem 0.8rem;
+  font-size: 16px;
+  color: rgb(35, 35, 35);
+  border: 2px solid blue;
+  border-radius: 10px;
+  max-width: 30rem;
+}
