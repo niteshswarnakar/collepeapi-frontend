@@ -12,10 +12,27 @@
   font-family: "Poppins", sans-serif;
 }
 
-.App {
+.homepage_section {
   text-align: center;
-  width: 100%;
-  margin-left: 24px;
+  max-width: 100%;
+}
+
+.home_container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.random_message_div {
+  margin-top: 1rem;
 }
 
 .ErrorMessage {
@@ -29,7 +46,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 35vmin;
   pointer-events: none;
 }
 
@@ -56,19 +73,20 @@
 }
 
 .myform {
-  width: 80%;
-  height: 45vh;
+  color: white;
+  background-color: blue;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding: 1rem 2rem;
-  border: 1px solid rgba(48, 60, 192, 0.178);
-  align-self: center;
-  /* background-color: red; */
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+.myform_p {
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
 }
 
 .electionContainer {

@@ -1,9 +1,10 @@
 import React, { useState, useEffect, CSSProperties, useRef } from "react";
 import classes from "../App.module.css";
 import Cardpage from "./Cardpage";
-import { Button, Grid, Stack, Box, TextField } from "@mui/material";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
+import Input from "../components/Input";
+import Button from "../components/Button";
 
 const override = {
   display: "block",
@@ -20,8 +21,10 @@ const Home = () => {
   let batch = useRef();
   let group = useRef();
   let message = useRef();
+
   let url = "https://collegeapi-backend.vercel.app/api/students";
   // let url = "http://localhost:5000/api/students";
+
   let requestOption = new URLSearchParams();
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -65,6 +68,7 @@ const Home = () => {
     "Grab the email 💕 and spam your friend ",
     "Are you fresher or ... ",
   ];
+
   const min = 0;
   const max = 18;
   const randMessageIndex = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -76,62 +80,50 @@ const Home = () => {
   }, [students]);
 
   return (
-    <Stack className={classes.App}>
-      <Grid xs={12} container direction="column">
+    <div className={classes.homepage_section}>
+      <div className={classes.home_container}>
         {!flag && (
           <form className={classes.myform} onSubmit={submitHandler}>
-            <p>Generate your cross-department's friends details 💘</p>
-            <TextField
-              name="prog"
+            <p className={classes.myform_p}>
+              Generate your cross-department's friends details 💘
+            </p>
+            <Input
               type="text"
               label="Program"
               inputRef={prog}
               placeholder="eg. BCH"
             />
-            <TextField
+            <Input
               type="text"
-              name="batch"
               label="Batch"
-              id="batch"
               inputRef={batch}
               placeholder="eg. 076"
             />
-            <TextField
+            <Input
               label="Group"
               type="text"
-              name="group"
-              id="group"
               inputRef={group}
               placeholder="eg. A"
             />
-            <TextField
+            <Input
               label="Your message"
               type="text"
-              name="message"
-              id="message"
               inputRef={message}
               placeholder="any feedback"
             />
-            <Button variant="contained" type="submit" onClick={submitHandler}>
+            <Button type="submit" submitHandler={submitHandler}>
               Fetch Data
             </Button>
           </form>
         )}
-      </Grid>
-      {/* {photoAlert && (
-        <Grid item>
-          <h4>
-            Due to some students concern about their email and photo, I removed
-            those fields
-          </h4>
-        </Grid>
-      )} */}
+      </div>
+
       {photoAlert && (
-        <Grid item>
+        <div className={classes.random_message_div}>
           <p>{messages[randMessageIndex]}</p>
-        </Grid>
+        </div>
       )}
-      <Grid className={classes.carContainer} container xs={12} spacing={4}>
+      <div className={classes.cardContainer} container xs={12} spacing={4}>
         {loading ? (
           <ClipLoader
             loading={loading}
@@ -147,8 +139,8 @@ const Home = () => {
             })}
           </>
         )}
-      </Grid>
-    </Stack>
+      </div>
+    </div>
   );
 };
 

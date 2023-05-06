@@ -1,9 +1,10 @@
 .mybutton {
-  height: 2.5rem;
-  width: 6rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
   border: none;
-  border-radius: 7px;
-  background-color: rgb(42, 42, 227);
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  background: none;
+  border: 2px solid white;
   color: white;
 }
