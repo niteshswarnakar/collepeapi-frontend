@@ -74,7 +74,7 @@
 
 .myform {
   color: white;
-  background-color: blue;
+  background-color: rgba(0, 37, 82, 0.759);
   display: flex;
   flex-direction: column;
   align-items: center;
