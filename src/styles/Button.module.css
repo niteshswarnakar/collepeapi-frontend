@@ -4,7 +4,6 @@
   border: none;
   padding: 0.4rem 1.2rem;
   border-radius: 2rem;
-  background: none;
-  border: 2px solid white;
+  background: blue;
   color: white;
 }
