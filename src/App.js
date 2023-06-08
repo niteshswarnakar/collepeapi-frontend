@@ -11,20 +11,11 @@ import ConfessionPage from "./pages/ConfessionPage";
 import AddConfessionPage from "./pages/AddConfessionPage";
 import ApiPage from "./pages/ApiPage";
 import SingleConfessionPage from "./pages/SingleConfessionPage";
+import AddBook from "./pages/AddBook";
 function App() {
   return (
     <Router>
       <Header />
-      {/* <div className={classes.ErrorMessage}>
-        <p>Kei samaye lai banda gariyeko xa 👺...</p>
-        <a href="https://www.programiz.com/">www.programiz.com</a>
-        <a href="https://www.youtube.com/@easyexplanation9220">
-          www.youtube.com/@easyexplanation9220
-        </a>{" "}
-        <a href="https://www.youtube.com/watch?v=D0l_4vXCY_o">
-          www.youtube.com/075BCT-PICNIC
-        </a>
-      </div> */}
       <ElectionPost />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -33,6 +24,7 @@ function App() {
         <Route path="/confession/:id" element={<SingleConfessionPage />} />
         <Route path="/add-confession" element={<AddConfessionPage />} />
         <Route path="/api-endpoints" element={<ApiPage />} />
+        <Route path="/add-book" element={<AddBook />} />
       </Routes>
       <Footer />
     </Router>

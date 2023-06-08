@@ -1,9 +1,12 @@
-import { FaReact } from "react-icons/fa";
+import React from 'react';
 
-function App() {
+const MyComponent = ({ blobUrl }) => {
   return (
     <div>
-      <FaReact style={{ width: "50px", height: "50px" }} />
+      <h1>Image File</h1>
+      <img src={blobUrl} alt="Image" />
     </div>
   );
-}
+};
+
+export default MyComponent;

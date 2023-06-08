@@ -3,7 +3,6 @@ import mylogo from "../assets/webpagelogo.png";
 import { Link } from "react-router-dom";
 import classes from "../styles/Header.module.css";
 import iamnitesh from "../assets/iamnitesh.png";
-import { SocialIcon } from "react-social-icons";
 const Header = () => {
   return (
     <div className={classes.headerdiv}>
@@ -26,6 +25,9 @@ const Header = () => {
           </Link>
           <Link className={classes.confessionNav} to="/confession">
             Confession
+          </Link>
+          <Link className={classes.confessionNav} to="/add-book">
+            Add Book
           </Link>
           {/* <a
             style={{ textDecoration: "none", color: "#000" }}
