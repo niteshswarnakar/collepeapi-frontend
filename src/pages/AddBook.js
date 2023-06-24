@@ -24,9 +24,9 @@ function AddBook() {
             const formData = new FormData()
             formData.append("file",file)
             const {data} = await axios.post("http://localhost:5000/book/add-book/",formData)
-            const responseImageUrl = URL.createObjectURL(new Blob([data.file], { type: data.file.mimetype }));
-            setResponse(responseImageUrl)
-            console.log({responseImageUrl})
+            // const responseImageUrl = URL.createObjectURL(new Blob([data.file], { type: data.file.mimetype }));
+            // setResponse(responseImageUrl)
+            // console.log({responseImageUrl})
             console.log("my data - ",data)
         }catch(e){
             console.log(e)

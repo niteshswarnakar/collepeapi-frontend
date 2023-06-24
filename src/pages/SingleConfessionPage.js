@@ -5,6 +5,7 @@ import classes from "../styles/SingleConfessionPage.module.css";
 import { GrApple } from "react-icons/gr";
 
 const SingleConfessionPage = () => {
+  const [inputUser, setInputUser] = useState();
   const [inputComment, setInputComment] = useState();
   const { state } = useLocation();
   const { id } = useParams();
@@ -29,6 +30,7 @@ const SingleConfessionPage = () => {
 
         {
           comment: inputComment,
+          user:inputUser
         }
       );
       console.log({ data });
@@ -65,6 +67,15 @@ const SingleConfessionPage = () => {
               type="text"
               name="inputComment"
               value={inputComment}
+            />
+            <input
+              placeholder="Your name..."
+              onChange={(e) => {
+                setInputUser(e.target.value);
+              }}
+              type="text"
+              name="inputUser"
+              value={inputUser}
             />
             <button type="submit">Send</button>
           </form>

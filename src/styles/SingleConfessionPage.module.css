@@ -22,10 +22,11 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 0.8rem;
 }
 
 .message {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
   margin-left: 0.2rem;
   /* border: 1px solid blue; */
@@ -37,12 +38,13 @@
   margin-top: 0.6rem;
   margin-left: 0.4rem;
   display: flex;
+  flex-direction: column;
   gap: 0.4rem;
 }
 
 .comment_form input {
   padding: 0.4rem 1.4rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 1px solid blue;
   border-radius: 30px;
   min-width: 6rem;
@@ -63,6 +65,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
 }
 
 .comment_message {
@@ -76,6 +79,7 @@
     rgba(2, 63, 186, 1) 0%,
     rgba(158, 0, 255, 1) 100%
   );
+  font-size: 0.8rem;
   max-width: 500px;
   min-width: 200px;
 }
