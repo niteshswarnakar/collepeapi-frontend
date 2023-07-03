@@ -14,6 +14,7 @@ const SingleConfessionPage = () => {
   const confession = state?.allConfession.find((item) => item._id === id);
 
   // const home_url = "https://collegeapi-backend.vercel.app"
+  // const local_url = "http://localhost:5000"
 
   useEffect(() => {
     setNewConfession({
@@ -22,11 +23,14 @@ const SingleConfessionPage = () => {
     });
   }, []);
 
+  // const home_url = "https://collegeapi-backend.vercel.app"
+  const local_url = "http://localhost:5000"
+
   const commentSubmitHandler = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `https://collegeapi-backend.vercel.app/api/add-comment/${id}`,
+        `${local_url}/api/add-comment/${id}`,
 
         {
           comment: inputComment,
@@ -83,7 +87,8 @@ const SingleConfessionPage = () => {
             {newConfession?.comments?.map((comment, index) => {
               return (
                 <div key={index} className={classes.comment_message}>
-                  <p>{comment}</p>
+                  <p>{comment?.comment}</p>
+                  <p>{comment?.user}</p>
                 </div>
               );
             })}
