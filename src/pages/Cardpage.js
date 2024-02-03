@@ -1141,8 +1141,8 @@ const Home = ({ student }) => {
           <CardMedia
             component="img"
             height="140"
-            image={require(`../assets/profiles/${images[randImageIndex]}`)}
-            // image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            // image={require(`../assets/profiles/${images[randImageIndex]}`)}
+            image="https://images.pexels.com/photos/15851250/pexels-photo-15851250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             // image={Sukriti}
             // image="https://images.pexels.com/photos/15957697/pexels-photo-15957697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             // alt="green iguana"
